@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="../CSS/sassStyle.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="../IMG/Yosua.png">
@@ -61,48 +61,25 @@
         <div class="spacer layer1"></div>
 
         <section>
-            <div class="neumorphism">
-                <div>Fullname</div>
-                <div>Email</div>
-                <div></div>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="">
-                <form id="Form" name="Form" autocomplete="off">
-                    <table>
-                        <h3 class="title">Contact</h3>
-                        <h4>Name</h4>
-                        <div class="input-container">
-                            <input type="text" name="name" class="input" id="cname" />
-                            <label for="cname">Name</label>
-                            <span>Name</span>
-                        </div>
-                        <h4>Email</h4>
-                        <div class="input-container">
-                            <input type="email" name="email" class="input" id="cemail" />
-                            <label for="cemail">Email</label>
-                            <span>Email</span>
-                        </div>
-
-                        <h4>Phone</h4>
-                        <div class="input-container">
-                            <input type="tel" name="phone" class="input" id="cphone" />
-                            <label for="cphone">Phone</label>
-                            <span>Phone</span>
-                        </div>
-                        <h4>Message<h4>
-                                <div class="input-container textarea">
-                                    <textarea name="message" class="input" id="cmessage"></textarea>
-                                    <label for="cmessage">Message</label>
-                                    <span>Message</span>
-                                </div>
-
-                                <input type="submit" id="submit" value="Send" class="btn" />
-                    </table>
-                </form>
-            </div>
+            <form class="neumorphism">
+                <div class="input-container">
+                    <label for="fullname">Fullname:</label><br>
+                    <input type="text" id="fullname" class="input" name="fullname"><br>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" class="input" id="email" /><br>
+                </div>
+                <div class="input-container">
+                    <label for="phone">LinkedIn</label><br>
+                    <input type="url" name="linkedin" class="input" id="linkedin" /><br>
+                </div>
+                <div class="input-container">
+                    <label for="message" id="kurang-atas">Message</label><br>
+                    <textarea name="message" class="input" id="message"></textarea>
+                </div>
+                <input type="submit" id="submit" value="Send" class="btn" />
+            </form>
         </section>
 
     </div>
